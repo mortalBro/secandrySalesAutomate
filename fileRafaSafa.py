@@ -7,12 +7,22 @@ final_jadugar="/home/tspl/Documents/Script_baz_lol/final_jadugar"
 jadugar="/home/tspl/Documents/Script_baz_lol/jadugar"
 productionRemark="/home/tspl/Documents/Script_baz_lol/productionRemark"
 uatRemark="/home/tspl/Documents/Script_baz_lol/uatRemark"
+
+inactiveSTART="/home/tspl/Documents/Script_baz_lol/inactiveSTART"
+inactiveSTARTCSV="/home/tspl/Documents/Script_baz_lol/inactiveSTARTCSV"
+prodInactiveRemark="/home/tspl/Documents/Script_baz_lol/prodInactiveRemark"
+uatInactiveRemark="/home/tspl/Documents/Script_baz_lol/uatInactiveRemark"
 folder_list.append(csv_jadugar)
 folder_list.append(fileCheck)
 folder_list.append(final_jadugar)
 folder_list.append(jadugar)
 folder_list.append(productionRemark)
 folder_list.append(uatRemark)
+
+folder_list.append(inactiveSTART)
+folder_list.append(inactiveSTARTCSV)
+folder_list.append(prodInactiveRemark)
+folder_list.append(uatInactiveRemark)
 
 for i in folder_list:
     

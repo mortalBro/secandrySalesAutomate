@@ -205,3 +205,56 @@ def uatUploadMapping(path):
         writer.writerows(data)
 
     print("CSV file created:", output_csv_path)
+
+
+
+def uatInactive(path):
+    url = "https://uatsecondarysales.godfreyphillips.co:8000/api/v1/masterwdskucategoryupload_update/"
+
+    payload = {}
+    files=[
+    ('file',('user.csv',open(path,'rb'),'text/csv'))
+    ]
+    headers = {
+    'Cookie': '5c905=1687946670496-360844997; cf485=1685535234920-305002843; 5c9003=xgZHFCT2gJpE1TTXFTvFSd4EeAcLPsgwzv1fbxqQ6E2V6Lk4rynTYEIdiuEkLUhbs7iYcg22CHqvaGeYArlpGJFH2dKB8saA3azOkPJNVdPv8v+Ofh7++fbgCaX9ow/JSS1yEsakn2TSwq4xiPbiYjRX7KHzdL6qoQpfJXYM3R+ow8qy'
+    }
+
+    response = requests.request("POST", url, headers=headers, data=payload, files=files)
+
+    response_json = response.json()
+    data = response_json["data"]
+    output_csv_path = "/home/tspl/Documents/Script_baz_lol/uatInactiveRemark/uatInactive.csv"
+    fieldnames = data[0].keys()
+    with open(output_csv_path, 'w', newline='') as file:
+        writer = csv.DictWriter(file, fieldnames=fieldnames)
+        writer.writeheader()
+        writer.writerows(data)
+
+    print("CSV file created:", output_csv_path)
+
+
+
+
+def productionInactive(path):
+    url = "https://secondarysales.godfreyphillips.co:8000/api/v1/masterwdskucategoryupload_update/"
+
+    payload = {}
+    files=[
+    ('file',('user.csv',open(path,'rb'),'text/csv'))
+    ]
+    headers = {
+    'Cookie': '5c905=1687946670496-360844997; cf485=1685535234920-305002843; 5c9003=xgZHFCT2gJpE1TTXFTvFSd4EeAcLPsgwzv1fbxqQ6E2V6Lk4rynTYEIdiuEkLUhbs7iYcg22CHqvaGeYArlpGJFH2dKB8saA3azOkPJNVdPv8v+Ofh7++fbgCaX9ow/JSS1yEsakn2TSwq4xiPbiYjRX7KHzdL6qoQpfJXYM3R+ow8qy'
+    }
+
+    response = requests.request("POST", url, headers=headers, data=payload, files=files)
+
+    response_json = response.json()
+    data = response_json["data"]
+    output_csv_path = "/home/tspl/Documents/Script_baz_lol/prodInactiveRemark/productionInactiveRemark.csv"
+    fieldnames = data[0].keys()
+    with open(output_csv_path, 'w', newline='') as file:
+        writer = csv.DictWriter(file, fieldnames=fieldnames)
+        writer.writeheader()
+        writer.writerows(data)
+
+    print("CSV file created:", output_csv_path)

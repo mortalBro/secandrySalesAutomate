@@ -27,6 +27,15 @@ uMaster=False
 uHier=False
 uMap=False
 n=4
+
+
+# useR=True
+# uMaster=True
+# uHier=False
+# # uMap=True
+# n=1
+
+
 file_names = os.listdir(folder_path)
 for i in file_names:
     if i.startswith(".~lock."):
@@ -88,7 +97,8 @@ for i in range(n):
             uMaster=True
             if((file_name[-1:-4:-1][::-1])!="csv"):
                 excel_to_csv("jadugar"+file_name,file_name)
-                headerChangeWd_master(pa+file_name)
+                # print(pa+file_name[:len(file_name)-4]+"csv")
+                headerChangeWd_master(pa+file_name[:len(file_name)-4]+"csv")
                 outPUT="/home/tspl/Documents/Script_baz_lol/fileCheck/master.csv"
                 value=countBlankSpace("/home/tspl/Documents/Script_baz_lol/fileCheck/master.csv")
                 if(value):
@@ -109,7 +119,7 @@ for i in range(n):
                 uMap=True
                 if((file_name[-1:-4:-1][::-1])!="csv"):
                     excel_to_csv("jadugar/"+file_name,file_name)
-                    headerChangeMapping(pa+file_name)
+                    headerChangeMapping(pa+file_name[:len(file_name)-4]+"csv")
                     output="/home/tspl/Documents/Script_baz_lol/fileCheck/mapping.csv"
                     value=countBlankSpace("/home/tspl/Documents/Script_baz_lol/fileCheck/mapping.csv")
                     if(value):

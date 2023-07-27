@@ -6,6 +6,11 @@ def moveFileIfNotExcel(a,b):
     destination_file_path = "/home/tspl/Documents/Script_baz_lol/csv_jadugar/"+b
     shutil.move(source_file_path, destination_file_path)
 
+def moveFileIfNotExcelInactive(a,b):
+    source_file_path = a
+    destination_file_path = "/home/tspl/Documents/Script_baz_lol/inactiveSTARTCSV/"+"inactive.csv"
+    shutil.move(source_file_path, destination_file_path)
+
 
 def headerChangeMapping(path):
     mapping=["SKU_CODE","WD_TOWN_ID","SKU_ID","ACTIVE_FLAG","MAX(B.UNIT_PRICE)","CNF_NAME","CNF_ID","WD_ID","TOWN","REGION"]
