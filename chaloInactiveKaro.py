@@ -18,14 +18,13 @@ for i in file_names:
 
 
 for file_name in file_names:
-    if (file_name.startswith("Inactive")):
-        if((file_name[-1:-4:-1][::-1])!="csv"):
-            excel_to_csvINACTIVE("/home/tspl/Documents/Script_baz_lol/inactiveSTART/"+file_name,file_name)
-            outputPath= "/home/tspl/Documents/Script_baz_lol/inactiveSTARTCSV/inactive.csv"
-            # uatInactive(outputPath)
-            productionInactive(outputPath)
-        else:
-            moveFileIfNotExcelInactive("inactiveSTART/"+file_name,file_name)
-            outputPath= "/home/tspl/Documents/Script_baz_lol/inactiveSTARTCSV/inactive.csv"
-            # uatUploadHier(outputPath)
-            productionUploadHier(outputPath)
+    if((file_name[-1:-4:-1][::-1])!="csv"):
+        excel_to_csvINACTIVE("/home/tspl/Documents/Script_baz_lol/inactiveSTART/"+file_name,file_name)
+        outputPath= "/home/tspl/Documents/Script_baz_lol/inactiveSTARTCSV/inactive.csv"
+        # uatInactive(outputPath)
+        productionInactive(outputPath)
+    else:
+        moveFileIfNotExcelInactive("inactiveSTART/"+file_name,file_name)
+        outputPath= "/home/tspl/Documents/Script_baz_lol/inactiveSTARTCSV/inactive.csv"
+        # uatInactive(outputPath)
+        productionInactive(outputPath)

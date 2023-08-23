@@ -9,7 +9,7 @@ def excel_to_csv(rasta,a):
 
 def excel_to_csvINACTIVE(rasta,a):
     excel_file_path = rasta
-    csv_file_path = "/home/tspl/Documents/Script_baz_lol/inactiveSTARTCSV/"+"inactive."+"csv"
+    csv_file_path = "/home/tspl/Documents/Script_baz_lol/inactiveSTARTCSV/inactive.csv"
     data_frame = pd.read_excel(excel_file_path)
     data_frame.to_csv(csv_file_path, index=False)
     print("Conversion from Excel to CSV completed!")

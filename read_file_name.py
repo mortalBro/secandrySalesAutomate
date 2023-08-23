@@ -21,19 +21,19 @@ from uplodFile import uatUploadMapping
 
 pa="/home/tspl/Documents/Script_baz_lol/csv_jadugar/"
 folder_path = "/home/tspl/Documents/Script_baz_lol/jadugar"
-mapping_file=["WD_SKU_M","Add_WD_S","wd_sku_m","wd_sku_m","Add_WD_S"]
+mapping_file=["WD_SKU_M","Add_WD_S","wd_sku_m","wd_sku_m","Add_WD_S","ADD WD_S","WD SKU M","Wd_SKU_M"]
 useR=False
 uMaster=False
 uHier=False
 uMap=False
 n=4
 
-
+# #Uncommet if you have mapping and hererchy7 only
 # useR=True
 # uMaster=True
 # uHier=False
-# # uMap=True
-# n=1
+# uMap=False
+# # n=1
 
 
 file_names = os.listdir(folder_path)
@@ -49,6 +49,7 @@ if(len(file_names)==1 and len(file_names[0])>=8 and file_names[0][:8] in mapping
     n=1
 for i in range(n):
     for file_name in file_names:
+        # if ((file_name.startswith("sales") or checkHer(file_name.split())) and useR and uMaster and uHier==False):
         if (file_name.startswith("sales") and useR and uMaster and uHier==False):
             uHier=True
             if((file_name[-1:-4:-1][::-1])!="csv"):
@@ -133,4 +134,4 @@ for i in range(n):
                     if(value):
                         productionUploadMapping(output)
                         uatUploadMapping(output)
-    print("File Name:", file_name)
+    print("File Name:ABHI", file_name)

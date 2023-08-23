@@ -12,6 +12,11 @@ inactiveSTART="/home/tspl/Documents/Script_baz_lol/inactiveSTART"
 inactiveSTARTCSV="/home/tspl/Documents/Script_baz_lol/inactiveSTARTCSV"
 prodInactiveRemark="/home/tspl/Documents/Script_baz_lol/prodInactiveRemark"
 uatInactiveRemark="/home/tspl/Documents/Script_baz_lol/uatInactiveRemark"
+
+loginRepAttendance="/home/tspl/Documents/Script_baz_lol/loginReportCal"
+
+folder_list.append(loginRepAttendance)
+
 folder_list.append(csv_jadugar)
 folder_list.append(fileCheck)
 folder_list.append(final_jadugar)

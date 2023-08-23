@@ -8,7 +8,7 @@ def moveFileIfNotExcel(a,b):
 
 def moveFileIfNotExcelInactive(a,b):
     source_file_path = a
-    destination_file_path = "/home/tspl/Documents/Script_baz_lol/inactiveSTARTCSV/"+"inactive.csv"
+    destination_file_path = "/home/tspl/Documents/Script_baz_lol/inactiveSTARTCSV/inactive.csv"
     shutil.move(source_file_path, destination_file_path)
 
 

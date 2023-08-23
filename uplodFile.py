@@ -146,6 +146,7 @@ def productionUploadHier(path):
     response = requests.request("POST", url, headers=headers, data=payload, files=files)
 
     response_json = response.json()
+    # print(response_json)
     data = response_json["data"]
     output_csv_path = "/home/tspl/Documents/Script_baz_lol/productionRemark/production_heirarchy_master_upload.csv"
     fieldnames = data[0].keys()
@@ -250,6 +251,7 @@ def productionInactive(path):
 
     response_json = response.json()
     data = response_json["data"]
+    print(data)
     output_csv_path = "/home/tspl/Documents/Script_baz_lol/prodInactiveRemark/productionInactiveRemark.csv"
     fieldnames = data[0].keys()
     with open(output_csv_path, 'w', newline='') as file:
