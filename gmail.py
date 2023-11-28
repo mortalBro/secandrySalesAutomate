@@ -55,7 +55,7 @@ def read_and_download_attachments(username, password, subject, save_folder="."):
 
 
 # gmail_username = "mortal369pp@gmail.com"
-# gmail_password = "kbze tvwu ogcf zdwk" 
+# gmail_password = "enter your password"
 # search_subject = "kamalsir"
 
 # jadugar_pe_save = "/home/tspl/Documents/Script_baz_lol/jadugar"
