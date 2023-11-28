@@ -13,4 +13,3 @@ run_terminal_command()
 
 
 
-# kbze tvwu ogcf zdwk
