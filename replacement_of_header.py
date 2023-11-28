@@ -14,7 +14,7 @@ def moveFileIfNotExcelInactive(a,b):
 
 def headerChangeMapping(path):
     mapping=["SKU_CODE","WD_TOWN_ID","SKU_ID","ACTIVE_FLAG","MAX(B.UNIT_PRICE)","CNF_NAME","CNF_ID","WD_ID","TOWN","REGION"]
-
+    
     csv_file_path = path
 
     output_file_path = "/home/tspl/Documents/Script_baz_lol/fileCheck/mapping.csv"
@@ -32,7 +32,7 @@ def headerChangeMapping(path):
 
 
 def headerChangeMaster_user(path):
-    master_user=["USER_ID","NAME","LOCATION","USER_TYPE"]			
+    master_user=["USER_ID","NAME","LOCATION","USER_TYPE","STATE_CODE","STATE_NAME"]			
     csv_file_path = path
     output_file_path = "/home/tspl/Documents/Script_baz_lol/final_jadugar/user.csv"
     data = []
