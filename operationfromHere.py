@@ -4,7 +4,7 @@ from attachedFiltetPRO import send_threaded_reply
 import time
 
 gmail_username = "mortal369pp@gmail.com"
-gmail_password = "kbze tvwu ogcf zdwk" 
+gmail_password = "enter your password"
 search_subject = "ajaysir"
 jadugar_pe_save = "/home/tspl/Documents/Script_baz_lol/jadugar"
 
