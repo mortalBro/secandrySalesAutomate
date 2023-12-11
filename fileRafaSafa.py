@@ -1,4 +1,5 @@
 import os
+import pandas as pd
 
 folder_list=[]
 csv_jadugar="/home/tspl/Documents/Script_baz_lol/csv_jadugar"
@@ -14,9 +15,10 @@ prodInactiveRemark="/home/tspl/Documents/Script_baz_lol/prodInactiveRemark"
 uatInactiveRemark="/home/tspl/Documents/Script_baz_lol/uatInactiveRemark"
 
 loginRepAttendance="/home/tspl/Documents/Script_baz_lol/loginReportCal"
+panmapping = "/home/tspl/Documents/Script_baz_lol/panmapping"
 
 folder_list.append(loginRepAttendance)
-
+folder_list.append(panmapping)
 folder_list.append(csv_jadugar)
 folder_list.append(fileCheck)
 folder_list.append(final_jadugar)

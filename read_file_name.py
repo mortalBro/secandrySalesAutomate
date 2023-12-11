@@ -18,18 +18,18 @@ from uplodFile import productionUploadHier
 from uplodFile import productionUploadMapping
 from uplodFile import uatUploadMapping
 
-
+# /home/tspl/Documents/Script_baz_lol/jadugar
 pa="/home/tspl/Documents/Script_baz_lol/csv_jadugar/"
 folder_path = "/home/tspl/Documents/Script_baz_lol/jadugar"
-mapping_file=["WD_SKU_M","Add_WD_S","wd_sku_m","wd_sku_m","Add_WD_S","ADD WD_S","WD SKU M","Wd_SKU_M"]
+mapping_file=["WD_SKU_M","Add_WD_S","wd_sku_m","wd_sku_m","Add_WD_S","ADD WD_S","WD SKU M","Wd_SKU_M","ADD_WD_S",'ADD WD S',"ADD WD S"]
+
 useR=False
 uMaster=False
 uHier=False
 uMap=False
 n=4
 
-# #Uncommet if you have mapping and hererchy7 only
-# useR=True
+# useR=False
 # uMaster=True
 # uHier=False
 # uMap=False

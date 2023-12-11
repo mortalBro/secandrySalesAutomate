@@ -42,7 +42,10 @@ def zeroInUserLocation(path):
         for row in reader:
             location = row['LOCATION']
             if '0' not in location:
-                row['LOCATION'] = '0' + location
+                if(len(location)>1):
+                    row['LOCATION'] =location
+                else:
+                    row['LOCATION'] = '0' + location
             modified_rows.append(row)
     with open(output_file_path, 'w', newline='') as file:
         writer = csv.DictWriter(file, fieldnames=fieldnames)
