@@ -23,8 +23,8 @@ pa="/home/tspl/Documents/Script_baz_lol/csv_jadugar/"
 folder_path = "/home/tspl/Documents/Script_baz_lol/jadugar"
 mapping_file=["WD_SKU_M","Add_WD_S","wd_sku_m","wd_sku_m","Add_WD_S","ADD WD_S","WD SKU M","Wd_SKU_M","ADD_WD_S",'ADD WD S',"ADD WD S"]
 
-useR=False
-uMaster=False
+useR=True
+uMaster=True
 uHier=False
 uMap=False
 n=4
@@ -56,11 +56,11 @@ def BoomBamm():
     uMap=False
     n=4
 
-    # useR=True
-    # uMaster=True
-    # uHier=False
-    # uMap=False
-    # # n=1
+    useR=True
+    uMaster=True
+    uHier=False
+    uMap=False
+    # n=1
 
 
     file_names = os.listdir(folder_path)

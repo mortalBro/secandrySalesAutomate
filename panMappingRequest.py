@@ -2,14 +2,14 @@ import pandas as pd
 import os
 
 
-folderpath = "/home/tspl/Documents/Script_baz_lol/panmapping"
-file_names = os.listdir(folderpath)
+# folderpath = "/home/tspl/Documents/Script_baz_lol/panmapping"
+# file_names = os.listdir(folderpath)
 
-herlocation =""
-mapplocation =""
+# herlocation =""
+# mapplocation =""
 
-heirarchy = pd.read_csv('master_sales_hierarchy_master_202309251057.csv')  
-mapping = pd.read_csv('master_wdskucatagory_202309251057.csv')
+heirarchy = pd.read_csv('/home/tspl/Documents/Script_baz_lol/panmapping/salesher.csv')  
+mapping = pd.read_csv('/home/tspl/Documents/Script_baz_lol/panmapping/wdskucategory.csv')
 hei_unique = heirarchy.drop_duplicates(subset=['wd_id', 'wd_town_id','town_code', 'town'],keep='last')
 mapping_unique = mapping.drop_duplicates(subset=['sku_code', 'wd_town_id', 'sku_id'],keep='last')
 
